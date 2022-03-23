@@ -6,7 +6,7 @@ const ShopItem = ({ baliBalance, shopItem, setBaliBalance, setBaughtItems }) => 
     const handleBuyItem = (e)=>{
         if(shopItem.price<=baliBalance){
             setBaliBalance((prev)=>{return prev-shopItem.price})
-            setBaughtItems(shopItem);
+            setBaughtItems((prevBaughtItems)=>{ return [...prevBaughtItems, shopItem]});
         }
     }
     return (

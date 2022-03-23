@@ -5,7 +5,7 @@ import "./plugin.css";
 
 const Plugin = ({ setOpen, open, setBaliBalance, baliBalance }) => {
     const [pluginClass, setPluginClass] = useState("plugin");
-    const [baliPrice, setBaliPrice] = useState(0.01);
+    const [baliPrice, setBaliPrice] = useState(0.001);
     const [ethBalance, setEthBalance] = useState(1);
     const [buyBali, setBuyBali] = useState(false);
 
