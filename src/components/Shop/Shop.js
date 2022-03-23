@@ -4,8 +4,10 @@ import ShopItem from "../ShopItem/ShopItem";
 import "./Shop.css";
 import { shopItems } from "./cfg";
 
-const Shop = () => {
+const Shop = ({baliBalance, setBaliBalance, setBaughtItems}) => {
     const [openShop, setOpenShop] = useState(false);
+
+
     return (
         <div>
             {!openShop && (
@@ -32,7 +34,7 @@ const Shop = () => {
                     />
                     <div className='shop-grid '>
                         {shopItems.map((shopItem) => (
-                            <ShopItem shopItem={shopItem} key={shopItem.id} />
+                            <ShopItem setBaughtItems={setBaughtItems} baliBalance={baliBalance} setBaliBalance={setBaliBalance} shopItem={shopItem} key={shopItem.id} />
                         ))}
                     </div>
                 </div>

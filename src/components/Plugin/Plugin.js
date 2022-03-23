@@ -3,16 +3,16 @@ import Button from "../Button/Button";
 import BuyBali from "../BuyBali/BuyBali";
 import "./plugin.css";
 
-const Plugin = ({ setOpen, open }) => {
+const Plugin = ({ setOpen, open, setBaliBalance, baliBalance }) => {
     const [pluginClass, setPluginClass] = useState("plugin");
-    const [baliBalance, setBaliBalance] = useState(0);
-    const [ethBalance, setEthBalance] = useState(0);
+    const [baliPrice, setBaliPrice] = useState(0.01);
+    const [ethBalance, setEthBalance] = useState(1);
     const [buyBali, setBuyBali] = useState(false);
 
     useEffect(() => {
         let classN = open ? "plugin active" : "plugin";
         setPluginClass(classN);
-    }, [open]);
+    }, [open, baliBalance]);
 
     return (
         <div className={pluginClass}>
@@ -49,6 +49,8 @@ const Plugin = ({ setOpen, open }) => {
                     setEthBalance={setEthBalance}
                     buyBali={buyBali}
                     setBuyBali={setBuyBali}
+                    baliPrice={baliPrice}
+                    setBaliBalance={setBaliBalance}
                 />
             )}
         </div>

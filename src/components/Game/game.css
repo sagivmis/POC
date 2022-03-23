@@ -24,3 +24,8 @@
     /* box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 9px; */
     background-color: #9289b6;
 }
+
+.balance-amount{
+    display: inline;
+    margin-left: 5px;
+}

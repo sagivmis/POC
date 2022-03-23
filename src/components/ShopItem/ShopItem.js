@@ -2,7 +2,13 @@ import React from "react";
 import Button from "../Button/Button";
 import "./shopItem.css";
 
-const ShopItem = ({ shopItem }) => {
+const ShopItem = ({ baliBalance, shopItem, setBaliBalance, setBaughtItems }) => {
+    const handleBuyItem = (e)=>{
+        if(shopItem.price<=baliBalance){
+            setBaliBalance((prev)=>{return prev-shopItem.price})
+            setBaughtItems(shopItem);
+        }
+    }
     return (
         <Button size='document'>
             <div className='shop-item'>
@@ -19,6 +25,7 @@ const ShopItem = ({ shopItem }) => {
                     size='small'
                     color='#e9e7f0'
                     fontColor='#6b609b'
+                    onClick={handleBuyItem}
                 />
             </div>
         </Button>
