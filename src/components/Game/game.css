@@ -1,0 +1,26 @@
+.game {
+    width: 40vw;
+    height: 50vh;
+    position: relative;
+    background-color: #ccc8dd;
+    left: 27.5%;
+    top: 22.5%;
+}
+
+.plugin-btn {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+}
+
+.plugin-container {
+}
+.balance {
+    position: absolute;
+    left: 25px;
+    top: 10px;
+    padding: 2px 15px;
+    border-radius: 5px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 9px; */
+    background-color: #9289b6;
+}

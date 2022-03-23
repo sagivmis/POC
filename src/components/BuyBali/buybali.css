@@ -1,0 +1,52 @@
+.buy-bali {
+    position: absolute;
+    left: -200%;
+    top: 10%;
+    transition: all 1s;
+}
+
+.active-buy {
+    background-color: #e9e7f0;
+    width: 150%;
+    height: 80%;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 1s;
+}
+
+.buy-row {
+    width: 80%;
+    line-height: 30px;
+    background-color: #887fb0;
+    margin: 10px;
+    border-radius: 3px;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.3);
+    color: #e9e7f0;
+}
+
+.buy-row::placeholder {
+    color: #fff;
+}
+.amount-buy {
+    position: absolute;
+    width: 60%;
+    left: 10%;
+    line-height: 50px;
+    font-size: 26px;
+    text-align: center;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+}
+
+.buy-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 8%;
+    padding: 0.5rem 30%;
+    font-size: 32px;
+    border-radius: 5px;
+    margin: 3px;
+    background-color: #645991;
+    /* font-weight: 300; */
+}
